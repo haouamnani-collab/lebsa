@@ -1,0 +1,180 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#fafafa;}
+.ig-wrap{width:470px;max-width:100%;margin:0 auto;background:#fff;border:1px solid #dbdbdb;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
+.ig-header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;}
+.ig-header-left{display:flex;align-items:center;gap:10px;}
+.ig-avatar{width:32px;height:32px;border-radius:50%;object-fit:cover;border:2px solid transparent;background:linear-gradient(white,white) padding-box,linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888) border-box;}
+.ig-username{font-size:13px;font-weight:600;color:#000;line-height:1.2;}
+.ig-location{font-size:11px;color:#000;font-weight:400;}
+.ig-more{color:#000;font-size:18px;cursor:pointer;background:none;border:none;}
+.ig-image{width:100%;display:block;aspect-ratio:1/1;object-fit:cover;}
+.ig-actions{display:flex;align-items:center;gap:0;padding:8px 12px 0;}
+.ig-action-btn{background:none;border:none;cursor:pointer;padding:6px;display:flex;align-items:center;}
+.ig-action-btn svg{width:24px;height:24px;}
+.ig-bookmark{margin-left:auto;}
+.ig-likes{padding:4px 16px;font-size:14px;font-weight:600;color:#000;}
+.ig-caption{padding:2px 16px 8px;}
+.ig-caption-user{font-size:14px;font-weight:600;color:#000;margin-right:4px;}
+.ig-caption-text{font-size:14px;color:#000;direction:rtl;text-align:right;line-height:1.5;}
+.ig-more-btn{color:#8e8e8e;font-size:14px;cursor:pointer;}
+.ig-view-all{padding:2px 16px;font-size:14px;color:#8e8e8e;cursor:pointer;}
+.ig-comments-section{padding:0 16px;}
+.ig-comment{display:flex;gap:12px;margin-bottom:16px;align-items:flex-start;}
+.ig-c-avatar{width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0;background:#dbdbdb;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#555;}
+.ig-c-body{flex:1;min-width:0;}
+.ig-c-username{font-size:13px;font-weight:600;color:#000;}
+.ig-c-text{font-size:14px;color:#000;direction:rtl;text-align:right;line-height:1.5;word-break:break-word;}
+.ig-c-meta{display:flex;gap:12px;align-items:center;margin-top:4px;}
+.ig-c-time{font-size:12px;color:#8e8e8e;}
+.ig-c-likes{font-size:12px;color:#8e8e8e;font-weight:600;}
+.ig-c-reply{font-size:12px;color:#8e8e8e;font-weight:600;cursor:pointer;}
+.ig-c-heart{background:none;border:none;cursor:pointer;color:#8e8e8e;padding:0;margin-left:auto;}
+.ig-c-img{width:100%;max-height:200px;object-fit:cover;border-radius:4px;margin-top:6px;}
+.ig-timestamp{padding:0 16px 6px;font-size:10px;color:#8e8e8e;text-transform:uppercase;letter-spacing:.3px;}
+.ig-add-comment{display:flex;align-items:center;padding:12px 16px;border-top:1px solid #efefef;gap:10px;}
+.ig-add-avatar{width:28px;height:28px;border-radius:50%;background:#dbdbdb;}
+.ig-add-input{flex:1;border:none;outline:none;font-size:14px;color:#000;background:transparent;}
+.ig-add-input::placeholder{color:#8e8e8e;}
+.ig-post-btn{font-size:14px;font-weight:600;color:#0095f6;cursor:pointer;background:none;border:none;}
+</style>
+
+<div class="ig-wrap">
+  <div class="ig-header">
+    <div class="ig-header-left">
+      <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=200" class="ig-avatar">
+      <div>
+        <div class="ig-username">lebsa_dz_official</div>
+        <div class="ig-location">Algeria</div>
+      </div>
+    </div>
+    <button class="ig-more">•••</button>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800" class="ig-image">
+
+  <div class="ig-actions">
+    <button class="ig-action-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    </button>
+    <button class="ig-action-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </button>
+    <button class="ig-action-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+    <button class="ig-action-btn ig-bookmark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+    </button>
+  </div>
+
+  <div class="ig-likes">2,418 أعجبهم هذا</div>
+
+  <div class="ig-caption">
+    <span class="ig-caption-user">lebsa_dz_official</span>
+    <span class="ig-caption-text">🧵 إطلاق رسمي لـ LEBSA DZ — اكتشفوا تشكيلتنا الجديدة من الألبسة الجزائرية 100%، تصاميم تجمع بين التراث والعصرنة. متوفرة من اليوم في كل الولايات 🇩🇿</span>
+  </div>
+
+  <div class="ig-view-all">عرض جميع التعليقات الـ 50</div>
+
+  <div class="ig-comments-section" id="comments-container"></div>
+
+  <div class="ig-timestamp">منذ يومين</div>
+
+  <div class="ig-add-comment">
+    <div class="ig-add-avatar"></div>
+    <input class="ig-add-input" placeholder="أضف تعليقاً...">
+    <button class="ig-post-btn">نشر</button>
+  </div>
+</div>
+
+<script>
+const avatarColors = ['#e8d5c4','#c4d5e8','#d5c4e8','#c4e8d5','#e8c4d5','#e8e4c4','#c4e8e8'];
+const comments = [
+  {user:'Yacine',text:'القماش جودة عالية بزاف، حسيت بالفرق من أول لمسة 🔥',likes:142,time:'منذ يومين',img:'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400'},
+  {user:'Karim',text:'المقاس مش مناسب، الصورة في الإعلان كانت زينة بصح الواقع غير شوي 😕',likes:9,time:'منذ يومين',img:'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400'},
+  {user:'Lina',text:'وين نلقاوها في المدية؟',likes:4,time:'منذ يومين'},
+  {user:'Sofia',text:'التفصيل أنيق بزاف والتغليف كان راقي 👏',likes:87,time:'منذ يومين',img:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400'},
+  {user:'Nour',text:'السعر مرتفع شوي مقارنة بالمنافسين 💸',likes:22,time:'منذ يومين',img:'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=400'},
+  {user:'Samir',text:'شنو المقاسات المتوفرة؟',likes:3,time:'منذ يومين'},
+  {user:'Amine',text:'أحسن من الماركات الأجنبية بالنسبة لي، نتيجة جزائرية تفتخر بيها ❤️',likes:203,time:'منذ يومين',img:'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=400'},
+  {user:'Rania',text:'التوصيل تأخر بزاف، خدت أكثر من أسبوعين 😡',likes:16,time:'منذ يومين',img:'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400'},
+  {user:'Walid',text:'كاين توصيل للولايات الجنوبية؟',likes:5,time:'منذ يومين'},
+  {user:'Imane',text:'مازال ماجربتهاش، بصح التصميم عجبني بزاف',likes:31,time:'منذ يومين',img:'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400'},
+  {user:'Mehdi',text:'جودة الخياطة ضعيفة، توقعت أحسن من هذا',likes:11,time:'منذ يومين'},
+  {user:'Houda',text:'ألوان رائعة وتصميم عصري، حابة نشري كل التشكيلة 🥰',likes:56,time:'منذ يومين',img:'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400'},
+  {user:'Tariq',text:'وصلتني الطلبية سالمة والتعليب احترافي 📦',likes:28,time:'منذ 3 أيام'},
+  {user:'Asma',text:'اشتريت قفطانين وكانت جودتهم ممتازة، نوصي بيهم',likes:44,time:'منذ 3 أيام',img:'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=400'},
+  {user:'Bilal',text:'كاش معلومات على مواد الخياطة؟',likes:7,time:'منذ 3 أيام'},
+  {user:'Djamila',text:'الألوان في الواقع أجمل من الصور على النت 😍',likes:63,time:'منذ 3 أيام',img:'https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=400'},
+  {user:'Hassan',text:'شحنت لفرنسا بلا مشاكل، التوصيل الدولي يخدم',likes:38,time:'منذ 3 أيام'},
+  {user:'Meriem',text:'واش كاين خصم للطلبيات الكبيرة؟',likes:6,time:'منذ 3 أيام'},
+  {user:'Omar',text:'اشتريت هدية لزوجتي وعجبتها بزاف 💝',likes:89,time:'منذ 3 أيام',img:'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400'},
+  {user:'Samia',text:'التصليح مش زين بصح المنتج نفسه راقي',likes:14,time:'منذ 3 أيام'},
+  {user:'Rachid',text:'كاين قبعات أو إكسسوارات تكمل اللوك؟',likes:8,time:'منذ 3 أيام'},
+  {user:'Fatiha',text:'صنعت جزائرية أصيلة 🇩🇿 نفخر بيكم',likes:112,time:'منذ 4 أيام',img:'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400'},
+  {user:'Mourad',text:'الخياطة محكمة والتفصيل دقيق جداً',likes:47,time:'منذ 4 أيام'},
+  {user:'Naima',text:'شريت 3 قطع وكل واحدة أحلى من الأخرى',likes:72,time:'منذ 4 أيام',img:'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400'},
+  {user:'Khaled',text:'الموقع سهل الاستخدام والدفع آمن',likes:19,time:'منذ 4 أيام'},
+  {user:'Zakia',text:'خسارة ما عندهمش متجر في بسكرة',likes:25,time:'منذ 4 أيام'},
+  {user:'Farouk',text:'المكعبات والنقوش التقليدية روعة 🤩',likes:58,time:'منذ 4 أيام',img:'https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=400'},
+  {user:'Yasmine',text:'أحسن هدية لعيد الأم، شكراً LEBSA ❤️',likes:94,time:'منذ 4 أيام'},
+  {user:'Lotfi',text:'التنفيذ يعكس هوية جزائرية حقيقية',likes:36,time:'منذ 5 أيام'},
+  {user:'Sihem',text:'اشتريت قندورة وكانت تحفة، نرجع نشري',likes:81,time:'منذ 5 أيام',img:'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=400'},
+  {user:'Adel',text:'كاش طريقة للتواصل لطلبيات خاصة؟',likes:3,time:'منذ 5 أيام'},
+  {user:'Lynda',text:'حلي ذوقية ومريحة في نفس الوقت',likes:67,time:'منذ 5 أيام'},
+  {user:'Nassim',text:'شريت لأختي وعجبتها 10/10',likes:42,time:'منذ 5 أيام',img:'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=400'},
+  {user:'Karima',text:'اللون ما جاش مطابق للصورة بالضبط 😕',likes:18,time:'منذ 5 أيام'},
+  {user:'Sofiane',text:'المقاس S ضيق شوي، خذوا الحجم الأكبر',likes:29,time:'منذ 5 أيام'},
+  {user:'Dounia',text:'تشكيلة رائعة تليق بكل المناسبات ✨',likes:76,time:'منذ 6 أيام',img:'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400'},
+  {user:'Redouane',text:'الخامة ممتازة وتتحمل الغسيل كويس',likes:34,time:'منذ 6 أيام'},
+  {user:'Amira',text:'نتمنى تكون شراكة مع ولايات الوسط',likes:21,time:'منذ 6 أيام'},
+  {user:'Youssef',text:'سعر مناسب مقارنة بالجودة المقدمة',likes:53,time:'منذ 6 أيام'},
+  {user:'Malika',text:'اشتريت للعرس وكان اختيار موفق جداً 💍',likes:108,time:'منذ 6 أيام',img:'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400'},
+  {user:'Hamid',text:'المواد طبيعية ومريحة للبشرة الحساسة',likes:45,time:'منذ 6 أيام'},
+  {user:'Sara',text:'واش كاين مجموعة للأطفال كذلك؟',likes:11,time:'منذ 7 أيام'},
+  {user:'Mounir',text:'جربت ثلاث ماركات وهذي الأحسن فالجودة',likes:87,time:'منذ 7 أيام',img:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400'},
+  {user:'Nadia',text:'التوصيل في 48 ساعة خدمة ممتازة 👍',likes:39,time:'منذ 7 أيام'},
+  {user:'Tarek',text:'ديزاين عصري مع لمسة تراثية، ذوق رفيع',likes:62,time:'منذ 7 أيام'},
+  {user:'Hind',text:'التغليف يدل على الاهتمام بالتفاصيل 🎁',likes:48,time:'منذ 7 أيام',img:'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400'},
+  {user:'Billel',text:'منتج جزائري يستاهل الدعم والمتابعة',likes:93,time:'منذ 7 أيام'},
+  {user:'Nesrine',text:'شريت تيشرت والخياطة رائعة من الداخل',likes:27,time:'منذ 7 أيام',img:'https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?w=400'},
+  {user:'Amir',text:'واش ديكم سترات للشتاء؟ نستنى التشكيلة',likes:15,time:'منذ 8 أيام'},
+  {user:'Zineb',text:'أشياء زينة بالتوفيق ودايما أحسن 🌟',likes:71,time:'منذ 8 أيام',img:'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=400'},
+  {user:'Malek',text:'اشتريت لأبي وفرح بيها من أول نظرة',likes:134,time:'منذ 8 أيام',img:'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400'}
+];
+
+const container = document.getElementById('comments-container');
+comments.forEach(c => {
+  const initial = c.user.charAt(0).toUpperCase();
+  const color = avatarColors[c.user.charCodeAt(0) % avatarColors.length];
+  const div = document.createElement('div');
+  div.className = 'ig-comment';
+  div.innerHTML = `
+    <div class="ig-c-avatar" style="background:${color}">${initial}</div>
+    <div class="ig-c-body">
+      <span class="ig-c-username">${c.user}</span>
+      <div class="ig-c-text">${c.text}</div>
+      ${c.img ? `<img src="${c.img}" class="ig-c-img" loading="lazy">` : ''}
+      <div class="ig-c-meta">
+        <span class="ig-c-time">${c.time}</span>
+        <span class="ig-c-likes">${c.likes} إعجاب</span>
+        <span class="ig-c-reply">رد</span>
+        <button class="ig-c-heart">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8e8e8e" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+      </div>
+    </div>`;
+  container.appendChild(div);
+});
+
+document.querySelectorAll('.ig-c-heart').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const svg = this.querySelector('svg');
+    const filled = svg.getAttribute('fill') === '#ed4956';
+    svg.setAttribute('fill', filled ? 'none' : '#ed4956');
+    svg.setAttribute('stroke', filled ? '#8e8e8e' : '#ed4956');
+  });
+});
+</script>
